@@ -8,7 +8,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
-    @IBOutlet weak var noteTitleLabel: UILabel!
-    @IBOutlet weak var lastModTimeLabel: UILabel!
+    @IBOutlet weak var taskNameLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     
 }

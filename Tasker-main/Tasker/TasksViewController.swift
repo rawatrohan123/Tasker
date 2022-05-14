@@ -31,19 +31,19 @@ class TasksViewController: UITableViewController {
         dateFormatter.dateFormat = "MM/dd/YY"
         let currentTask = entries[indexPath.row]
         if let unwrapTask = currentTask.task {
-            cell.noteTitleLabel.text = "Task: " + unwrapTask
+            cell.taskNameLabel.text = "Task: " + unwrapTask
         } else {
             print("Error unwrapping task optional!")
-            cell.noteTitleLabel.text = "Error!"
+            cell.taskNameLabel.text = "Error!"
         }
         
         if let unwrapDate = currentTask.entryDate {
             let modifiedDate = dateFormatter.string(from: unwrapDate)
-            cell.lastModTimeLabel.text = "Date: " + modifiedDate
+            cell.dateLabel.text = "Date: " + modifiedDate
             
         } else {
             print("Error unwrapping task optional!")
-            cell.noteTitleLabel.text = "Error!"
+            cell.taskNameLabel.text = "Error!"
         }
         
 
